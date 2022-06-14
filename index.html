@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+</head>
+<body>
+<main class="cv">
+    <section class="about">
+        <h2 class="about_h2">About</h2>
+        <header class="header">
+            <div class="photo">
+                <img src="./assets/image.jpg" alt="Alexey Khalimov"/>
+            </div>
+        </header>
+        <article>
+            <h3 class="contacts__text">contacts</h3>
+            <div class="underlined"></div>
+            <ul class="contacts_list">
+                <li><a href="https://t.me/Alex_Halim" target="_blank"><img src="assets/icons/telegram-app.svg"
+                                                                           alt="telegram ico" height="24" width="24">
+                    <span class="contacts_text">@Alex_Halim</span></a></li>
+                <li><a href="mailto:dipppp84@gmail.com" target="_blank"><img src="assets/icons/gmail.svg"
+                                                                             alt="gmail ico" height="24" width="24">
+                    <span class="contacts_text">dipppp84@gmail.com</span></a></li>
+                <li><a href="https://discordapp.com/users/#9513" target="_blank"><img src="assets/icons/discord.svg"
+                                                                                      alt="telegram ico" height="24"
+                                                                                      width="24">
+                    <span class="contacts_text">Alex (Dipppp84)#9513</span></a></li>
+            </ul>
+        </article>
+        <article class="skills">
+            <h3 class="contacts__text">skills</h3>
+            <div class="underlined"></div>
+            <ul class="skills_list">
+                <li>Java</li>
+                <li>SQL (Basic)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Node.js</li>
+                <li>OOP</li>
+            </ul>
+            <div id="work-examples">
+                <h3 class="contacts__text">languages</h3>
+                <div class="underlined"></div>
+                <ul class="skills_list">
+                    <li>English: A2</li>
+                    <li>Russian: Native</li>
+                    <li>Ukrainian: Native</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section class="about-me">
+        <h1 class="name">ALEXEY KHALIMOV</h1>
+        <article class="education">
+
+            <h2>About Me</h2>
+            <div class="description">
+                <p>I want to take rs-school courses to get new skills and experience
+                    doing tasks for further education in IT.</p>
+            </div>
+            <h2>Education</h2>
+            <div class="description">
+                <div class="description__item1">
+                    <div>
+                        <span class="strong">University</span>
+                    </div>
+                    <div>
+                        <span class="strong">2012</span> – <span class="strong">2017</span>
+                    </div>
+                </div>
+                <div class="description__item2">
+                    <span class="strong">NURE:</span> Kharkiv National University of Radio Electronics
+                </div>
+            </div>
+            <h2>Courses</h2>
+            <div class="description">
+                <ul class="skills_list">
+                    <li>CS50 lectures</li>
+                    <li>Javarush</li>
+                </ul>
+            </div>
+            <h2>Code example</h2>
+            <div class="description">
+                <div><p>Your job is to write a function which increments a string, to create a new string.</p>
+                    <ul class="skills_list">
+                        <li>If the string already ends with a number, the number should be incremented by 1.</li>
+                        <li>If the string does not end with a number. the number 1 should be appended to the new</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                    <pre class="code_example"><code>
+function incrementString(strng) {
+    const index = strng.search('[0-9]+$');
+    if (index === -1)
+        return strng + 1;
+    const numbers = strng.slice(index);
+    const str = strng.slice(0, index);
+    const zeroLength = numbers.length;
+    return str + String(+numbers + 1).padStart(zeroLength, '0');
+}
+                    </code></pre>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <nav>
+        <a class="my-github" href="https://github.com/Dipppp84" target="_blank">
+            <img class="github-icon" src="./assets/icons/github.svg" alt="github icon" width="32" height="32">
+            <p>my GitHub</p></a>
+        <p>2022</p>
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="./assets/icons/rs_school_js.svg" alt="rsschool icon" width="86" height="32"></a>
+    </nav>
+</footer>
+</body>
+</html>

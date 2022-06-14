@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #e6e2d4;
+}
+
+.cv {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    -webkit-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.49);
+    box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.49);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+}
+
+.name {
+    font-size: 42px;
+}
+
+.photo img {
+    width: 100%;
+    -webkit-box-shadow: 5px 6px 32px 1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 5px 6px 32px 1px rgba(0, 0, 0, 0.49);
+    box-shadow: 5px 6px 32px 1px rgba(0, 0, 0, 0.49);
+}
+
+.about {
+    padding: 1rem;
+    width: 35%;
+    color: white;
+    background-color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.about_h2 {
+    position: absolute;
+    margin-top: -99999999px;
+}
+.contacts__text {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.contacts_list {
+    padding-inline-start: 20px;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+.contacts_list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contacts_text {
+    padding-left: 10px;
+}
+
+.skills_list {
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+.underlined {
+    width: 100%;
+    height: .05rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.about-me {
+    padding: 1rem;
+    width: 75%;
+    color: #4d4d4d;
+    background-color: white;
+}
+
+.education {
+    margin-bottom: 3rem;
+}
+
+.description {
+    padding: 10px;
+    display: flex;
+    font-size: 15px;
+    line-height: 1.5;
+    border-top: solid grey 1px;
+}
+
+.description__item1 {
+    width: 35%;
+}
+
+.description__item2 {
+    padding-left: 10px;
+    width: 75%;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.code_example {
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    background-color: #f5f5f5;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4d4d4d;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .github-icon {
+    margin-right: 10px;
+}
+
+.my-github {
+    display: flex;
+    align-items: center;
+}
